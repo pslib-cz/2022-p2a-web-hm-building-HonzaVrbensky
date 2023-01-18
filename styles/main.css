@@ -6,9 +6,16 @@ body {
     display: grid;
     background-image: url(../media/pageheader-3100w.jpg);
     height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    font-weight: bold;
+
 }
 
-
+.secondary__header {
+    text-align: center;
+    font-weight: lighter;
+}
 
 
 
