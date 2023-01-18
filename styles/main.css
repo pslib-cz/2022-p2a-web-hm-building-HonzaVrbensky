@@ -2,8 +2,10 @@ body {
     margin: 0;
 }
 
-header {
-    
+.main__header {
+    display: grid;
+    background-image: url(../media/pageheader-3100w.jpg);
+    height: 100vh;
 }
 
 
