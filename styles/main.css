@@ -2,23 +2,96 @@ body {
     margin: 0;
 }
 
+div {
+    padding-top: 1em;
+}
+
+h2 {
+    font-family: 'Arial';
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Arial';
+    font-size: 1.5em;
+}
+
 .main__header {
+    font-family: 'Arial';
     display: grid;
     /*background-image: url(../media/pageheader-3100w.jpg);*/
-    height: 100vh;
     overflow: hidden;
     text-align: center;
+    text-justify: center;
+    color: black;
     font-weight: bold;
+    font-size: 2em;
 
 }
 
 .secondary__header {
+    font-family: 'Arial';
     text-align: center;
     font-weight: lighter;
+    font-size: 1.3em;
 }
 
+/*.menu {
+    position: absolute;
+    right: 20px;;
+    top: 20px;
+}*/
+
+ b {
+    color: orange;
+ }
+
+ p {
+    font-family: 'Arial';
+    font-size: 1.3em;
+ }
 
 
+ .button__sluzby {
+    font-family: 'Arial';
+    font-size: 1.4em;
+    padding: 10px 30px;
+    color: orange;
+    border: orange;
+    border-style: dashed;
+ }
+
+ .button {
+    font-family: 'Arial';
+    font-size: 1.4em;
+    padding: 10px 30px;
+    color: white;
+    background-color: orange;
+ }
+
+ .end {
+    background-color: orange;
+ }
+
+ .end__header {
+    font-family: 'Arial';
+    font-weight: bold;
+    color: white;
+ }
+
+ .end__p {
+    font-family: 'Arial';
+    font-weight: lighter;
+    color: white;
+ }
+
+ .button__inverted {
+    font-family: 'Arial';
+    background-color: white;
+    color: orange;
+    font-size: 1.4em;
+    padding: 10px 30px;
+ }
 @media (min-width: 1900px)
 {
 
