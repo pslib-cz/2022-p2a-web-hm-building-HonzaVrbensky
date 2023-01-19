@@ -1,9 +1,24 @@
+@font-face {
+   font-family: 'OpenSans';
+   src: url(../fonts/OpenSans/OpenSans-Regular.ttf);
+}
+
+@font-face {
+   font-family: 'OpenSans-bold';
+   src: url(../fonts/OpenSans/OpenSans-Bold.ttf);
+}
+
+@font-face {
+   font-family: 'OpenSans-light';
+   src: url(../fonts/OpenSans/OpenSans-Light.ttf);
+}
+
 body {
     margin: 0;
 }
 
 div {
-    padding-top: 1em;
+   margin: 10px;
 }
 
 h2 {
@@ -16,34 +31,64 @@ h3 {
     font-size: 1.5em;
 }
 
+a {
+   font-family: 'Arial';
+   text-decoration: underline;
+   color: white;
+}
+
+li {
+   font-family: 'Arial';
+   list-style: none;
+   padding-left: 1em;
+   padding-right: 15em;
+   margin: 10px;
+}
+
+.header__box {
+   background: linear-gradient(0deg, rgba(36, 36, 36, 0.4), rgba(36, 36, 36, 0.4)), linear-gradient(180deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0) 100%), linear-gradient(180deg, #42332A 0%, rgba(255, 255, 255, 0) 100%), url(../media/pageheader-3100w.jpg);
+   background-blend-mode: normal, normal, hue, normal;
+   background-size: cover;
+   background-position: center;
+   background-repeat: none;
+   overflow: hidden;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+
 .main__header {
-    font-family: 'Arial';
-    display: grid;
-    /*background-image: url(../media/pageheader-3100w.jpg);*/
-    overflow: hidden;
+    font-family: 'OpenSans-bold';
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
     text-align: center;
-    text-justify: center;
-    color: black;
+    justify-content: flex-end;
+    color: white;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 3em;
+    font-weight: bold;
 
 }
 
 .secondary__header {
-    font-family: 'Arial';
+    font-family: 'OpenSans-light';
+    color: white;
     text-align: center;
-    font-weight: lighter;
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 
-/*.menu {
+.menu {
     position: absolute;
     right: 20px;;
-    top: 20px;
-}*/
+    top: 70px;
+    background-color: #EB6C27;
+    color: white;
+}
 
  b {
-    color: orange;
+    color: #EB6C27;
  }
 
  p {
@@ -56,9 +101,11 @@ h3 {
     font-family: 'Arial';
     font-size: 1.4em;
     padding: 10px 30px;
-    color: orange;
-    border: orange;
+    color: #EB6C27;
+    border: #EB6C27;
     border-style: dashed;
+    margin-top: 2em;
+    margin-bottom: 2em;
  }
 
  .button {
@@ -66,33 +113,89 @@ h3 {
     font-size: 1.4em;
     padding: 10px 30px;
     color: white;
-    background-color: orange;
+    background-color: #EB6C27;
+    margin-left: 160px;
+    object-position: center;
  }
 
  .end {
-    background-color: orange;
+    background-color: #EB6C27;
+    padding-bottom: 4em;
  }
 
  .end__header {
+    text-align: center;
     font-family: 'Arial';
     font-weight: bold;
     color: white;
  }
 
  .end__p {
+    text-align: center;
     font-family: 'Arial';
     font-weight: lighter;
     color: white;
  }
 
  .button__inverted {
+    text-decoration: none;
     font-family: 'Arial';
     background-color: white;
-    color: orange;
+    color: #EB6C27;
     font-size: 1.4em;
     padding: 10px 30px;
+    position: absolute;
+    left: 140px;
  }
-@media (min-width: 1900px)
-{
 
-}
+ .novostavby__img {
+   height: 10em;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 0px 0px 40px 0px;
+ }
+
+ .prumysl__img {
+   margin-top: 1em;
+   height: 10em;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 0px 0px 0px 40px;
+ }
+
+ .komunikace__img {
+   margin-top: 1em;
+   height: 10em;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 0px 0px 40px 0px;
+ }
+
+ .rekonstrukce__img {
+   margin-top: 1em;
+   height: 10em;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 0px 0px 40px 0px;
+ }
+
+ .reference__h1 {
+   font-family: 'OpenSans-light';
+   color: black;
+   text-align: center;
+   font-size: 1.2em;
+ }
+
+ .reference__h2 {
+   font-size: 1.8em;
+   font-family: 'Arial';
+   font-weight: bold;
+   text-align: center;
+ }
+
+ .zbrojnice__img, .pradelna__img, .plocha__img {
+   object-position: center;
+   object-fit: cover;
+   height: 20em;
+   width: 100%;
+ }
