@@ -52,10 +52,12 @@ li {
    background-position: center;
    background-repeat: none;
    overflow: hidden;
-   height: 100vh;
+   height: 60vh;
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
+   margin-left: 0px;
+   margin-right: 0px;
 }
 
 .main__header {
@@ -104,8 +106,6 @@ li {
     color: #EB6C27;
     border: #EB6C27;
     border-style: dashed;
-    margin-top: 2em;
-    margin-bottom: 2em;
  }
 
  .button {
@@ -121,6 +121,11 @@ li {
  .end {
     background-color: #EB6C27;
     padding-bottom: 4em;
+    padding-top: 1em;
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: flex-end;
  }
 
  .end__header {
@@ -144,12 +149,11 @@ li {
     color: #EB6C27;
     font-size: 1.4em;
     padding: 10px 30px;
-    position: absolute;
-    left: 140px;
+    text-align: center;
  }
 
  .novostavby__img {
-   height: 10em;
+   height: 15em;
    width: 100%;
    object-fit: cover;
    border-radius: 0px 0px 40px 0px;
@@ -157,7 +161,7 @@ li {
 
  .prumysl__img {
    margin-top: 1em;
-   height: 10em;
+   height: 15em;
    width: 100%;
    object-fit: cover;
    border-radius: 0px 0px 0px 40px;
@@ -165,15 +169,15 @@ li {
 
  .komunikace__img {
    margin-top: 1em;
-   height: 10em;
+   height: 15em;
    width: 100%;
    object-fit: cover;
-   border-radius: 0px 0px 40px 0px;
+   border-radius: 0px 0px 0px 40px;
  }
 
  .rekonstrukce__img {
    margin-top: 1em;
-   height: 10em;
+   height: 15em;
    width: 100%;
    object-fit: cover;
    border-radius: 0px 0px 40px 0px;
