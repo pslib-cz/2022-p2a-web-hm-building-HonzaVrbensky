@@ -13,6 +13,11 @@
    src: url(../fonts/OpenSans/OpenSans-Light.ttf);
 }
 
+@font-face {
+   font-family: 'Inter';
+   src: url(../fonts/OpenSans/Inter/static/Inter-Medium.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -21,25 +26,28 @@ div {
    margin: 10px;
 }
 
+h1 {
+   font-size: 'Inter';
+}
+
 h2 {
-    font-family: 'Arial';
+    font-family: 'Inter';
     font-weight: bold;
 }
 
 h3 {
-    font-family: 'Arial';
-    font-size: 1.5em;
+    font-family: 'Inter';
+    font-size: 1.2em;
 }
 
 a {
-   font-family: 'Arial';
+   font-family: 'Inter';
    text-decoration: underline;
    color: white;
 }
 
 li {
-   font-family: 'Arial';
-   list-style: none;
+   font-family: 'Inter';
    padding-left: 1em;
    padding-right: 15em;
    margin: 10px;
@@ -82,6 +90,8 @@ li {
 }
 
 .menu {
+   font-family: 'Inter';
+   list-style: none;
     position: absolute;
     right: 20px;;
     top: 70px;
@@ -89,18 +99,31 @@ li {
     color: white;
 }
 
+.menu__gradient {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   align-items: center;
+}
+
+.nav-hamburger-line {
+   width: 46px;
+   height: 8px;
+   background-image: linear-gradient(90deg, var(--primary), #FFBE9A);
+}
+
  b {
     color: #EB6C27;
  }
 
  p {
-    font-family: 'Arial';
-    font-size: 1.3em;
+    font-family: 'Inter';
+    font-size: 1.1em;
  }
 
 
  .button__sluzby {
-    font-family: 'Arial';
+    font-family: 'Inter';
     text-decoration: none;
     font-size: 1.4em;
     padding: 10px 30px;
@@ -110,13 +133,12 @@ li {
  }
 
  .button {
-    font-family: 'Arial';
+    font-family: 'Inter';
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding: 10px 30px;
     color: white;
     background-color: #EB6C27;
-    margin-left: 160px;
     object-position: center;
  }
 
@@ -131,24 +153,24 @@ li {
 
  .end__header {
     text-align: center;
-    font-family: 'Arial';
+    font-family: 'Inter';
     font-weight: bold;
     color: white;
  }
 
  .end__p {
     text-align: center;
-    font-family: 'Arial';
+    font-family: 'Inter';
     font-weight: lighter;
     color: white;
  }
 
  .button__inverted {
     text-decoration: none;
-    font-family: 'Arial';
+    font-family: 'Inter';
     background-color: white;
     color: #EB6C27;
-    font-size: 1.4em;
+    font-size: 1.2em;
     padding: 10px 30px;
     text-align: center;
  }
@@ -192,8 +214,8 @@ li {
  }
 
  .reference__h2 {
-   font-size: 1.8em;
-   font-family: 'Arial';
+   font-size: 1.4em;
+   font-family: 'Inter';
    font-weight: bold;
    text-align: center;
  }
@@ -212,6 +234,18 @@ li {
  }
 
  .nase__firma {
-   height: 15em;
-   background: url(../media/background-CTAblock-4460w.jpg);
- }
+   color: white;
+   height: 189px;
+   background: linear-gradient(0deg, rgba(36, 36, 36, 0.8), rgba(36, 36, 36, 0.8)), linear-gradient(180deg, rgba(66, 51, 42, 0.4) 0%, rgba(255, 255, 255, 0) 100%), url(../media/background-CTAblock-4460w.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.novostavby__h {
+   font-size: 'Inter';
+   font-size: 2em;
+}
+
+.novostavby__seznam::marker {
+   color: #EB6C27;
+}
