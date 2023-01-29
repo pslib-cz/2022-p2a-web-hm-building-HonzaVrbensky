@@ -99,17 +99,10 @@ li {
     color: white;
 }
 
-.menu__gradient {
-   display: flex;
-   flex-direction: column;
-   gap: 5px;
-   align-items: center;
-}
-
-.nav-hamburger-line {
-   width: 46px;
-   height: 8px;
-   background-image: linear-gradient(90deg, var(--primary), #FFBE9A);
+.menu__icon {
+   position: absolute;
+   right: 1em;
+   top: .5em;
 }
 
  b {
@@ -119,6 +112,8 @@ li {
  p {
     font-family: 'Inter';
     font-size: 1.1em;
+    margin-left: .5em;
+    margin-right: .5em;
  }
 
 
@@ -144,11 +139,15 @@ li {
 
  .end {
     background-color: #EB6C27;
+    width: 100%;
+    margin: 0;
     padding-bottom: 4em;
     padding-top: 1em;
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: absolute;
+    left: 0px;
  }
 
  .end__header {
@@ -246,6 +245,6 @@ li {
    font-size: 2em;
 }
 
-.novostavby__seznam::marker {
+.marked__list::marker {
    color: #EB6C27;
 }
