@@ -27,7 +27,7 @@ div {
 }
 
 h1 {
-   font-size: 'Inter';
+   font-family: 'Inter';
 }
 
 h2 {
@@ -247,4 +247,5 @@ li {
 
 .marked__list::marker {
    color: #EB6C27;
+   font-size: 2em;
 }
