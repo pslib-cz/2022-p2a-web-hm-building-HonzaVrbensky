@@ -327,6 +327,11 @@ li {
    margin: .5em;
 }
 
+
+/*-------------------------------------------------------------------------------------*/
+
+
+
 @media (min-width: 961px) {
 
    .zbrojnice__img, .pradelna__img, .plocha__img {
@@ -359,6 +364,61 @@ li {
       align-items: center;
       position: absolute;
       left: 0px;
-      top: 220em;
+      top: 200em;
    }
+
+   .novostavby__img {
+      height: 307px;
+      width: 729px;
+      object-fit: cover;
+      border-radius: 0px 0px 40px 0px;
+    }
+   
+    .prumysl__img {
+      margin-top: 1em;
+      height: 307px;
+      width: 729px;
+      object-fit: cover;
+      border-radius: 0px 0px 0px 40px;
+    }
+   
+    .komunikace__img {
+      margin-top: 1em;
+      height: 307px;
+      width: 729px;
+      object-fit: cover;
+      border-radius: 0px 0px 0px 40px;
+    }
+   
+    .rekonstrukce__img {
+      margin-top: 1em;
+      height: 307px;
+      width: 729px;
+      object-fit: cover;
+      border-radius: 0px 0px 40px 0px;
+    }
+
+    .sluzby__obsah {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+    }
+
+    .prumysl {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 2;
+    }
+
+    .komunikace {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 4;
+      grid-row-end: 4;
+    }
+
+    nav {
+      display: flex;
+    }
 }
