@@ -18,6 +18,11 @@
    src: url(../fonts/OpenSans/Inter/static/Inter-Medium.ttf);
 }
 
+@font-face {
+   font-family: 'Inter-bold';
+   src: url(../fonts/OpenSans/Inter/static/Inter-Bold.ttf);
+}
+
 body {
     margin: 0;
 }
@@ -115,6 +120,14 @@ li {
     margin-left: .5em;
     margin-right: .5em;
  }
+
+ .p__bold {
+   font-family: 'Inter-bold';
+   font-size: 1.1em;
+   margin-left: .5em;
+   margin-right: .5em;
+ }
+ 
 
 
  .button__sluzby {
@@ -248,4 +261,79 @@ li {
 .marked__list::marker {
    color: #EB6C27;
    font-size: 2em;
+}
+
+.map {
+   object-position: center;
+   height: 20em;
+   width: auto;
+   object-fit: cover;
+   margin-top: 2em;
+}
+
+.contacts {
+   display: flex;
+   flex-direction: column;
+   margin-left: 1.5em;
+}
+
+.contact__info-phone, .contact__info-mail, .contact__info-place {
+   margin: 1em;
+   color: #EB6C27;
+   font-size: 1.3em;
+   font-family: 'Inter-bold';
+   text-decoration: none;
+}
+
+.contact__info-phone::before {
+   content: " ";
+   height: 40px;
+   width: 40px;
+   background-color: #EB6C27;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+.contact__info-mail::before {
+   content: " ";
+   height: 40px;
+   width: 40px;
+   background-color: #EB6C27;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+.contact__info-place::before {
+   content: " ";
+   height: 40px;
+   width: 40px;
+   background-color: #EB6C27;
+   border-radius: 50%;
+   display: inline-block;
+}
+
+.form {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   margin-bottom: .5em;
+   margin-left: .5em;
+}
+
+.form__line {
+   border: 1px solid #EB6C27;
+   width: 90%;
+   min-height: 45px;
+   margin: .5em;
+}
+
+@media (min-width: 961px) {
+
+   .zbrojnice__img, .pradelna__img, .plocha__img {
+      object-position: center;
+      object-fit: cover;
+      height: 307px;
+      width: 729px;
+   }
+
 }
