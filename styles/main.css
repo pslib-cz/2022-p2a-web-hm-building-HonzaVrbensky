@@ -333,7 +333,32 @@ li {
       object-position: center;
       object-fit: cover;
       height: 307px;
-      width: 729px;
+      width: 450px;
    }
 
+
+   .reference__odkazy {
+      display: flex;
+      justify-content: center;
+   }
+
+   .more__referencis {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .end {
+      background-color: #EB6C27;
+      width: 100%;
+      margin: 0;
+      padding-bottom: 4em;
+      padding-top: 1em;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      left: 0px;
+      top: 220em;
+   }
 }
