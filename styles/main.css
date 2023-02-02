@@ -36,8 +36,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Inter';
-    font-weight: bold;
+    font-family: 'Inter-bold';
 }
 
 h3 {
@@ -84,7 +83,10 @@ li {
     font-weight: bold;
     font-size: 3em;
     font-weight: bold;
+}
 
+.logo {
+   height: 3.5em;
 }
 
 .secondary__header {
@@ -327,7 +329,7 @@ li {
    margin: .5em;
 }
 
-.gallery   {
+.gallery__zbrojnice   {
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -342,9 +344,84 @@ li {
 
 /*-------------------------------------------------------------------------------------*/
 
+@media (min-width: 768px) {
+   p {
+      font-family: 'Inter';
+      font-size: 1.3em;
+      margin-left: .5em;
+      margin-right: .5em;
+   }
+
+   h1 {
+      font-family: 'Inter';
+      font-size: 2em;
+   }
+   
+   h2 {
+       font-family: 'Inter-bold';
+       font-size: 1.6em;
+   }
+   
+   h3 {
+       font-family: 'Inter';
+       font-size: 1.4em;
+   }
+}
 
 
+/*-------------------------------------------------------------------------------------*/
 @media (min-width: 961px) {
+   html {
+      max-width: 1920px;
+      margin: 0 auto;
+   }
+
+   p {
+      font-size: 1.4em;
+   }
+
+   h2 {
+      font-size: 1.7em;
+   }
+   
+   h3 {
+      font-size: 1.7em;
+      margin-left: 1em;
+      margin-top: 1em;
+   }
+
+
+
+   .header__box {
+      background-size: cover;
+      background-position: center;
+      background-repeat: none;
+      overflow: hidden;
+      height: 60vh;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin-left: 0px;
+      margin-right: 0px;
+   }
+
+   .marked__list {
+      font-size: 1.4em;
+      margin-left: 2em;
+   }
+
+   section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .sluzby {
+      max-width: 900px;
+      display: block;
+      text-align: center;
+   }
 
    .zbrojnice__img, .pradelna__img, .plocha__img {
       object-position: center;
@@ -352,7 +429,10 @@ li {
       height: 307px;
       width: 450px;
    }
-
+   .zbrojnice__img:hover, .pradelna__img:hover, .plocha__img:hover {
+      color: #EB6C27;
+      opacity: 0.5;
+   }
 
    .reference__odkazy {
       display: flex;
@@ -412,6 +492,8 @@ li {
 
     .sluzby__obsah {
       display: grid;
+      object-position: center;
+      max-width: 1500px;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
     }
@@ -438,4 +520,44 @@ li {
     .menu__icon {
       display: none;
     }
+
+    .referencis {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .gallery__zbrojnice   {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+      gap: 5px;
+      grid-auto-flow: dense;
+   }
+
+   .gallery__img--different_1 {
+      max-width: 480px;
+      object-fit: cover;
+      grid-column-start: 1;
+      grid-column-end: 1;
+      grid-row-start: 6;
+      grid-row-end: 8;
+   }
+
+   .gallery__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;   
+   }
+
+   .gallery__pradelna {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: auto;
+      align-items: center;
+      gap: 5px;
+      grid-auto-flow: dense;
+   }
+
 }
