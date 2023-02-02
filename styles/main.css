@@ -418,7 +418,12 @@ li {
       grid-row-end: 4;
     }
 
-    nav {
+   .menu {
       display: flex;
+      justify-items: center;
+    }
+
+    .menu__icon {
+      display: none;
     }
 }
