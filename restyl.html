@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,17 +9,20 @@
     <title>Document</title>
 </head>
 <body>
-    <nav><a href="./index.html"><img src="../2022-p2a-web-hm-building-HonzaVrbensky/media/logo.png"></a>
-        <a class="menu__icon"><img src="./media/hamburger-menu.svg"></a>
-    <!--
-    <lo class="menu">
-        <li><a href="./index.html">DOMŮ</a></li>
-        <li><a href="./index.html#sluzby">SLUŽBY</a></li>
-        <li><a href="./reference.html">REFERENCE</a></li>
-        <li><a href="./onas.html">O NÁS</a></li>
-        <li><a href="./kontakt.html">KONTAKT</a></li>
-    </lo></nav>
--->
+    <header class="header__box header__box--thin">
+        <nav class="navbar">
+            <a href="./index.html"><img class="logo" src="./media/logo.png"></a>
+            <div class="menu__icon"><img src="./media/hamburger-menu.svg"></div>
+            <menu class="menu">
+                <li class="navbar__item"><a class="navbar__item__link" href="./index.html">DOMŮ</a></li>
+                <li class="navbar__item navbar__item--active"><a class="navbar__item__link" href="./index.html#sluzby">SLUŽBY</a></li>
+                <li class="navbar__item"><a class="navbar__item__link" href="./reference.html">REFERENCE</a></li>
+                <li class="navbar__item"><a class="navbar__item__link" href="./onas.html">O NÁS</a></li>
+                <li class="navbar__item"><a class="navbar__item__link" href="./kontakt.html">KONTAKT</a></li>
+            </menu>
+        </nav>
+    </header>
+
 <div class="gallery__box">
     <div class="gallery__pradelna">
         <img class="gallery__img" src="./media/reference/plochy-restyl/reference-restyl-01.jpeg">
@@ -33,5 +36,6 @@
         <p class="end__p">Nezávazně nás kontaktujte a domluvme vše potřebné.</p>
         <a href="./kontakt.html" class="button__inverted">Nezávazně poptat</a>
     </footer>
+    <script src="./styles/main.js"></script>
 </body>
 </html>

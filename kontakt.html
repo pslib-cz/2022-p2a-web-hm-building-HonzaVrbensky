@@ -1,37 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <title>Document</title>
 </head>
 <body>
-    <nav><a href="./index.html"><img src="../2022-p2a-web-hm-building-HonzaVrbensky/media/logo.png"></a>
-        <a class="menu__icon"><img src="./media/hamburger-menu.svg"></a>
-
-        <!--<lo class="menu">
-            <li><a href="./index.html">DOMŮ</a></li>
-            <li><a href="./index.html#sluzby">SLUŽBY</a></li>
-            <li><a href="./reference.html">REFERENCE</a></li>
-            <li><a href="./onas.html">O NÁS</a></li>
-            <li><a href="./kontakt.html">KONTAKT</a></li>
-        </lo></nav>-->
+    <header class="header__box header__box--thin">
+        <nav class="navbar">
+            <a href="./index.html"><img class="logo" src="./media/logo.png"></a>
+            <div class="menu__icon"><img src="./media/hamburger-menu.svg"></div>
+            <menu class="menu">
+                <li class="navbar__item"><a class="navbar__item__link" href="./index.html">DOMŮ</a></li>
+                <li class="navbar__item"><a class="navbar__item__link" href="./index.html#sluzby">SLUŽBY</a></li>
+                <li class="navbar__item"><a class="navbar__item__link" href="./reference.html">REFERENCE</a></li>
+                <li class="navbar__item"><a class="navbar__item__link" href="./onas.html">O NÁS</a></li>
+                <li class="navbar__item navbar__item--active"><a class="navbar__item__link" href="./kontakt.html">KONTAKT</a></li>
+            </menu>
+        </nav>
+    </header>
 
         <h1>Kontatkujte nás</h1>
         <p>Zavolejte anebo nám napište... kvalitní komunikace je jeden z pilířů, na kterém stavíme.</p>
+<div class="contacts__list__map">
 <div class="contacts">
-        <p class="contact__info-phone">+420 775 550 564</p>
-        <p class="contact__info-mail">stavby@hm-building.cz</p>
+
+    <div class="contact__list">
+        <i class="icon">
+            <img src="./media/phone.svg">
+        </i>
+        <a href="tel:+420775550564" class="contact__info-phone">+420 775 550 564</a>
+    </div>
+
+    <div class="contact__list">
+        <i class="icon">
+            <img src="./media/mail.svg">
+        </i>
+        <a href="mailto:stavby@hm-building.cz" class="contact__info-mail">stavby@hm-building.cz</a>
+    </div>
+
+    <div class="contact__list">
+        <i class="icon">
+            <img src="./media/location.svg">
+        </i>
         <a class="contact__info-place" href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ">
             Křížanská 12, Liberec XXII-Horní suchá</a>
+    </div>
 </div>
         <a href="https://www.google.com/maps/place/K%C5%99i%C5%BEansk%C3%A1+12,+Horn%C3%AD+Such%C3%A1,+460+10+Liberec/@50.7600366,15.0014291,17z/data=!4m5!3m4!1s0x470936fe7ea6ccbb:0x362ba2cad58e444!8m2!3d50.760661!4d15.0022228?hl=cs-CZ">
             <img src="./media/mapa.jpg" class="map">
         </a>
-
+</div>
         <h2>Nezávazná poptávka služeb</h2>
         <p>Plácneme si pro Váš projekt? Nezávazně nás kontaktujte a domluvme vše potřebné</p>
         <form class="form">
@@ -47,5 +69,6 @@
             <textarea rows="10" class="form__line"></textarea>
             <button class="button">Odeslat nezávaznou poptávku</button>
         </form>
+        <script src="./styles/main.js"></script>
 </body>
 </html>
