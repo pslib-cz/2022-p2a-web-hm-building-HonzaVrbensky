@@ -32,7 +32,7 @@ div {
 }
 
 h1 {
-   font-family: 'Inter';
+   font-family: 'OpenSans-bold';
 }
 
 h2 {
@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Inter';
+    font-family: 'OpenSans-bold';
     font-size: 1.2em;
 }
 
@@ -249,7 +249,7 @@ li {
    border-radius: 0px 0px 40px 0px;
  }
 
- .reference__h1 {
+ .reference__popis {
    font-family: 'OpenSans-light';
    color: black;
    text-align: center;
