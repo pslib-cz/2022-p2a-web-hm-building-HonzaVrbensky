@@ -64,7 +64,7 @@ li {
    background-position: center;
    background-repeat: none;
    overflow: hidden;
-   height: 60vh;
+   height: 100vh;
    display: flex;
    flex-direction: column;
    justify-content: flex-end;
@@ -155,6 +155,7 @@ li {
  }
  
  .button__sluzby {
+   display: inline-block;
     font-family: 'Inter';
     text-decoration: none;
     font-size: 1.4em;
@@ -165,6 +166,7 @@ li {
  }
 
  .button {
+   display: inline-block;
     font-family: 'Inter';
     text-decoration: none;
     font-size: 1.2em;
@@ -202,6 +204,7 @@ li {
  }
 
  .button__inverted {
+   display: inline-block;
     text-decoration: none;
     font-family: 'Inter';
     background-color: white;
@@ -212,6 +215,7 @@ li {
  }
 
  .novostavby__img {
+   display: block;
    height: 15em;
    width: 100%;
    object-fit: cover;
@@ -219,6 +223,7 @@ li {
  }
 
  .prumysl__img {
+   display: block;
    margin-top: 1em;
    height: 15em;
    width: 100%;
@@ -227,6 +232,7 @@ li {
  }
 
  .komunikace__img {
+   display: block;
    margin-top: 1em;
    height: 15em;
    width: 100%;
@@ -235,6 +241,7 @@ li {
  }
 
  .rekonstrukce__img {
+   display: block;
    margin-top: 1em;
    height: 15em;
    width: 100%;
@@ -257,6 +264,7 @@ li {
  }
 
  .zbrojnice__img, .pradelna__img, .plocha__img {
+   display: block;
    object-position: center;
    object-fit: cover;
    height: 20em;
@@ -336,6 +344,7 @@ li {
 }
 
 .gallery__img {
+   display: block;
    max-width: 480px;
    object-fit: cover;
 }
@@ -352,6 +361,15 @@ li {
 
 .contacts__list__map {
    display: flex;
+}
+
+.sluzby__nadpis {
+   font-size: 2em;
+}
+
+.nase__firma--p {
+   padding-top: .5em;
+   font-size: 1.5em;
 }
 
 /*-------------------------------------------------------------------------------------*/
@@ -446,6 +464,7 @@ li {
    }
 
    .zbrojnice__img, .pradelna__img, .plocha__img {
+      display: block;
       object-position: center;
       object-fit: cover;
       height: 307px;
@@ -478,38 +497,23 @@ li {
       align-items: center;
       position: absolute;
       left: 0px;
-      /*top: 200em;*/
    }
 
-   .novostavby__img {
+   .novostavby__img, .rekonstrukce__img {
+      display: block;
       height: 307px;
       width: 729px;
       object-fit: cover;
       border-radius: 0px 0px 40px 0px;
     }
    
-    .prumysl__img {
+    .prumysl__img, .komunikace__img {
+      display: block;
       margin-top: 1em;
       height: 307px;
       width: 729px;
       object-fit: cover;
       border-radius: 0px 0px 0px 40px;
-    }
-   
-    .komunikace__img {
-      margin-top: 1em;
-      height: 307px;
-      width: 729px;
-      object-fit: cover;
-      border-radius: 0px 0px 0px 40px;
-    }
-   
-    .rekonstrukce__img {
-      margin-top: 1em;
-      height: 307px;
-      width: 729px;
-      object-fit: cover;
-      border-radius: 0px 0px 40px 0px;
     }
 
     .sluzby__obsah {
@@ -572,6 +576,7 @@ li {
    }
 
    .gallery__img--different_1 {
+      display: block;
       max-width: 480px;
       object-fit: cover;
       grid-column-start: 1;
