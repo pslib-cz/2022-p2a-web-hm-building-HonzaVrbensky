@@ -277,6 +277,10 @@ li {
    align-items: center;
  }
 
+ .centered__text {
+   text-align: center;
+ }
+
  .nase__firma {
    color: white;
    height: 189px;
@@ -425,14 +429,14 @@ li {
       right: 1em;
       left: 1em;
       width: calc(100% - 2em);
-   }
+   }navbar__item--a
 
    .header__box {
       background-size: cover;
       background-position: center;
       background-repeat: none;
       overflow: hidden;
-      height: 60vh;
+      height: 100vh;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -467,8 +471,8 @@ li {
       display: block;
       object-position: center;
       object-fit: cover;
-      height: 307px;
-      width: 450px;
+      max-height: 307px;
+      max-width: 450px;
    }
    .zbrojnice__img:hover, .pradelna__img:hover, .plocha__img:hover {
       color: #EB6C27;
