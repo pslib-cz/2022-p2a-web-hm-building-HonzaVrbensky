@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+    p {
+       font-family: 'Inter';
+       font-size: 1.3em;
+       margin-left: .5em;
+       margin-right: .5em;
+    }
+ 
+    h1 {
+       font-family: 'Inter';
+       font-size: 2em;
+    }
+    
+    h2 {
+        font-family: 'Inter-bold';
+        font-size: 1.6em;
+    }
+    
+    h3 {
+        font-family: 'Inter';
+        font-size: 1.4em;
+    }
+ }

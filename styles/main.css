@@ -23,6 +23,7 @@
    src: url(../fonts/OpenSans/Inter/static/Inter-Bold.ttf);
 }
 
+
 body {
     margin: 0;
 }
@@ -214,39 +215,20 @@ li {
     text-align: center;
  }
 
- .novostavby__img {
+ .novostavby__img, .rekonstrukce__img {
    display: block;
-   height: 15em;
    width: 100%;
+   height: 100%;
    object-fit: cover;
    border-radius: 0px 0px 40px 0px;
  }
 
- .prumysl__img {
+ .prumysl__img, .komunikace__img {
    display: block;
-   margin-top: 1em;
-   height: 15em;
    width: 100%;
+   height: 100%;
    object-fit: cover;
    border-radius: 0px 0px 0px 40px;
- }
-
- .komunikace__img {
-   display: block;
-   margin-top: 1em;
-   height: 15em;
-   width: 100%;
-   object-fit: cover;
-   border-radius: 0px 0px 0px 40px;
- }
-
- .rekonstrukce__img {
-   display: block;
-   margin-top: 1em;
-   height: 15em;
-   width: 100%;
-   object-fit: cover;
-   border-radius: 0px 0px 40px 0px;
  }
 
  .reference__popis {
@@ -313,9 +295,6 @@ li {
    margin-left: 1.5em;
 }
 
-.contact__list {
-   display: flex;
-}
 
 .contact__info-phone, .contact__info-mail, .contact__info-place {
    margin: 1em;
@@ -365,6 +344,7 @@ li {
 
 .contacts__list__map {
    display: flex;
+   flex-direction: row;
 }
 
 .sluzby__header {
@@ -376,236 +356,6 @@ li {
    font-size: 1.5em;
 }
 
-/*-------------------------------------------------------------------------------------*/
-
-@media (min-width: 768px) {
-   p {
-      font-family: 'Inter';
-      font-size: 1.3em;
-      margin-left: .5em;
-      margin-right: .5em;
-   }
-
-   h1 {
-      font-family: 'Inter';
-      font-size: 2em;
-   }
-   
-   h2 {
-       font-family: 'Inter-bold';
-       font-size: 1.6em;
-   }
-   
-   h3 {
-       font-family: 'Inter';
-       font-size: 1.4em;
-   }
-}
-
-
-/*-------------------------------------------------------------------------------------*/
-@media (min-width: 961px) {
-   html {
-      max-width: 1920px;
-      margin: 0 auto;
-   }
-
-   p {
-      font-size: 1.4em;
-   }
-
-   h2 {
-      font-size: 1.7em;
-   }
-   
-   h3 {
-      font-size: 1.7em;
-      margin-left: 1em;
-      margin-top: 1em;
-   }
-
-   .navbar {
-      top: 1em;
-      right: 1em;
-      left: 1em;
-      width: calc(100% - 2em);
-   }navbar__item--a
-
-   .header__box {
-      background-size: cover;
-      background-position: center;
-      background-repeat: none;
-      overflow: hidden;
-      height: 100vh;
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      margin-left: 0px;
-      margin-right: 0px;
-   }
-
-   .header__box--thin {
-      height: 150px;
-   }
-
-   .marked__list {
-      font-size: 1.4em;
-      margin: 0;
-      margin-left: 2em;
-   }
-
-   section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .sluzby {
-      max-width: 900px;
-      display: block;
-      text-align: center;
-   }
-
-   .zbrojnice__img, .pradelna__img, .plocha__img {
-      display: block;
-      object-position: center;
-      object-fit: cover;
-      max-height: 307px;
-      max-width: 450px;
-   }
-   .zbrojnice__img:hover, .pradelna__img:hover, .plocha__img:hover {
-      color: #EB6C27;
-      opacity: 0.5;
-   }
-
-   .reference__odkazy {
-      display: flex;
-      justify-content: center;
-   }
-
-   .more__referencis {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-   }
-
-   .end {
-      background-color: #EB6C27;
-      width: 100%;
-      margin: 0;
-      padding-bottom: 4em;
-      padding-top: 1em;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      position: absolute;
-      left: 0px;
-   }
-
-   .novostavby__img, .rekonstrukce__img {
-      display: block;
-      height: 307px;
-      width: 729px;
-      object-fit: cover;
-      border-radius: 0px 0px 40px 0px;
-    }
-   
-    .prumysl__img, .komunikace__img {
-      display: block;
-      margin-top: 1em;
-      height: 307px;
-      width: 729px;
-      object-fit: cover;
-      border-radius: 0px 0px 0px 40px;
-    }
-
-    .sluzby__obsah {
-      display: grid;
-      object-position: center;
-      max-width: 1500px;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-    }
-
-    .prumysl {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 2;
-      grid-row-end: 2;
-    }
-
-    .komunikace {
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: 4;
-      grid-row-end: 4;
-    }
-
-   .menu {
-      display: flex;
-      justify-items: center;
-      position: unset;
-      background-color: white;
-      border: none;
-      margin: 0;
-    }
-
-    .navbar__item__link {
-      color: #333;
-      text-decoration: none;
-    }
-
-    .navbar__item {
-      margin: 0;
-      padding: 1em;
-    }
-
-    .menu__icon {
-      display: none;
-    }
-
-    .referencis {
-      display: flex;
-      align-items: center;
-    }
-
-    .gallery__zbrojnice   {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
-      align-items: center;
-      gap: 5px;
-      grid-auto-flow: dense;
-   }
-
-   .gallery__img--different_1 {
-      display: block;
-      max-width: 480px;
-      object-fit: cover;
-      grid-column-start: 1;
-      grid-column-end: 1;
-      grid-row-start: 6;
-      grid-row-end: 8;
-   }
-
-   .gallery__box {
-      display: flex;
-      flex-direction: column;
-      align-items: center;   
-   }
-
-   .gallery__pradelna {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: auto;
-      align-items: center;
-      gap: 5px;
-      grid-auto-flow: dense;
-   }
-
-   .referencis_2 {
-      display: flex;
-   }
-
+.header__box--thin {
+   height: 5em;
 }
